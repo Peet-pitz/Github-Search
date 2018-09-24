@@ -6,6 +6,7 @@ This is a web app where you can search for users by their names and find their r
 * Angular CLI needs to be installed
 * A text editor of your choice has to be intalled
 * Git needs to be installed 
+* node js
 ## Specifications
 The program takes users input
     Input Example: peet-pitz
