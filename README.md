@@ -26,6 +26,9 @@ The program shows users information if posted
 
 ## Technologies Used
 Angular JS
+CSS
+Bootstrap
+HTML
 ## Support and contact details
 If you run into any issues or you have any concerns please feel free to contact me @ njoroge.pitz@gmail.com. Also your very welcome to make contributions to the code.
 ### License
