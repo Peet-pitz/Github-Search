@@ -1,11 +1,21 @@
-<h1>Hi</h1>
 <div *ngIf="search">
   <div class="panel panel-default">
     <div class="panel-heading">
-      {{search.name}} <small>{{search.login</small>
-        , Works at {{profile.company}}
-      <p>Hi!</p>
-
+      {{search.name}} <small>({{search.login}})</small>
+      <span *ngIf="search.company">, Works at {{search.company}}</span>
+      {{search.location}}
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="{{search.avatar_url}}" class="img-circle img-responsive" alt="profile image">
+        </div>
+        <div class="col-sm-5">
+          <ul class="list-group">
+            <li class="list-group-item" *ngIf="search.bio">{{search.bio}}</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>

@@ -10,10 +10,10 @@ import { SearchService } from '../search.service';
 export class SearchComponent implements OnInit {
   search:any[];
 
-  constructor(private searchService: SearchService) {
-    this.searchService.getSearchInfo().subscribe(search =>{
+  constructor(private searchingService: SearchService) {
+    this.searchingService.getSearchInfo().subscribe(search =>{
       console.log(search);
-      this.search = this.search;
+      this.search =search;
     });
    }
 
