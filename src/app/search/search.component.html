@@ -18,7 +18,7 @@
     </div>
     <div class="panel-body">
       <div class="row">
-        <div class="col-sm-8">
+        <div class="col-md-8">
           <img src="{{search.avatar_url}}" class="img-circle img-responsive" alt="profile image">
         </div>
         <!-- <div class="col-sm-3"> -->
@@ -27,7 +27,7 @@
             <li class="list-group-item" *ngIf="search.email"><a href="emailto:{{search.email}}">{{search.email}}</a></li>
           </ul>
         <!-- </div> -->
-        <div class="col-sm-4">
+        <div class="col-md-4">
           <div>
             <br>
             <p><a href="{{search.html_url}}" target="_blank" class="btn btn-success btn-sm">View profile on Github</a></p>
@@ -36,11 +36,12 @@
                 <h3 class="panel-title">Repos</h3>
               </div>
               <div class="panel-body" *ngFor="let repo of repos">
-                <p>
-                  {{repo.name}} <a href="{{repo.html_url}}" target="_blank" class="btn btn-sm btn-danger pull-right">Click to see on Github</a>
+                <p class="jumbotron">
+                  
+                  {{repo.name}}  <a href="{{repo.html_url}}" target="_blank" class="jumbotron" class="btn btn-sm btn-danger pull-right">Click to see on Github</a>
                   
                 </p>
-                <p>{{repo.description}}</p>
+                <!-- <p>{{repo.description}}</p> -->
 
               </div>
             </div>            
