@@ -18,17 +18,18 @@
     </div>
     <div class="panel-body">
       <div class="row">
-        <div class="col-sm-5">
+        <div class="col-sm-8">
           <img src="{{search.avatar_url}}" class="img-circle img-responsive" alt="profile image">
         </div>
-        <div class="col-sm-3">
+        <!-- <div class="col-sm-3"> -->
           <ul class="list-group">
             <li class="list-group-item" *ngIf="search.bio">{{search.bio}}</li>
             <li class="list-group-item" *ngIf="search.email"><a href="emailto:{{search.email}}">{{search.email}}</a></li>
           </ul>
-        </div>
+        <!-- </div> -->
         <div class="col-sm-4">
           <div>
+            <br>
             <p><a href="{{search.html_url}}" target="_blank" class="btn btn-success btn-sm">View profile on Github</a></p>
             <div class="panel panel-default">
               <div class="panel-heading">

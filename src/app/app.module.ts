@@ -7,6 +7,7 @@ import {FormsModule} from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
+import {RoutingModule} from './routing/routing.module'
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SearchComponent } from './search/search.component';
   imports: [
     BrowserModule,
     HttpModule,
-    FormsModule
+    FormsModule,
+    RoutingModule,
   ],
   providers: [SearchService],
   bootstrap: [AppComponent]
