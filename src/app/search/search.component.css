@@ -3,6 +3,12 @@
     background-color: white;
     
 }
+.jumbotron2{
+    font-size: 20px;
+    background-color: rgb(231, 255, 251);
+    size: 500%;
+    
+}
 .search-form{
     padding: 50px;
     background-color: aqua;
