@@ -18,7 +18,7 @@ The program can show repositories on github
  
 
 ## Link to live site
-  
+  https://peet-pitz.github.io/Github-Search/
 
 ## Technologies Used
 Angular JS
