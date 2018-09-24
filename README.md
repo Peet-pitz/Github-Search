@@ -15,6 +15,9 @@ The program can redirect to the users github page
 The program can show repositories on github
     Input Example: user clicks click to see on github
     Output Example: redirects to github
+The program shows users information if posted
+    Input Example: enter username 
+    Output Example: information of user is displayed if any is posted 
  
 
 ## Link to live site
