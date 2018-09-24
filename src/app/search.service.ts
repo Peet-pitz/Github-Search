@@ -25,4 +25,8 @@ export class SearchService {
      return this.http.get("https://api.github.com/users/" + this.username + "/repos?client_id=" + this.clientid + "&client_secret=" + this.clientsecret)
      .pipe(map(res => res.json()));
    }
+
+   updateSearch(username:string){
+     this.username = username;
+   }
 }

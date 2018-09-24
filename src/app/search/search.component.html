@@ -1,6 +1,10 @@
+<div class="background">
+<h1>Github Search</h1>
 <form action="" class="search-form">
   <div class="form-group">
-    <input type="text" class="form-control" placeholder="Enter Github username">
+    <input type="text" class="form-control" placeholder="Enter Github username" [(ngModel)]="username" name="username" (keyup)="findSearch()">
+      
+    
   </div>
 </form>
 <div *ngIf="search">
@@ -12,10 +16,10 @@
     </div>
     <div class="panel-body">
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-5">
           <img src="{{search.avatar_url}}" class="img-circle img-responsive" alt="profile image">
         </div>
-        <div class="col-sm-5">
+        <div class="col-sm-3">
           <ul class="list-group">
             <li class="list-group-item" *ngIf="search.bio">{{search.bio}}</li>
             <li class="list-group-item" *ngIf="search.email"><a href="emailto:{{search.email}}">{{search.email}}</a></li>
@@ -30,7 +34,7 @@
               </div>
               <div class="panel-body" *ngFor="let repo of repos">
                 <p>
-                  {{repo.name}} <a href="{{repo.html_url}}" target="_blank" class="btn btn-sm btn-warning pull-right">Click to see on Github</a>
+                  {{repo.name}} <a href="{{repo.html_url}}" target="_blank" class="btn btn-sm btn-danger pull-right">Click to see on Github</a>
                   
                 </p>
                 <p>{{repo.description}}</p>
@@ -43,4 +47,5 @@
       </div>
     </div>
   </div>
+</div>
 </div>

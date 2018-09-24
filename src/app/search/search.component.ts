@@ -10,9 +10,15 @@ import { SearchService } from '../search.service';
 export class SearchComponent implements OnInit {
   search:any[];
   repos:any[];
+  username:string;
 
   constructor(private searchingService: SearchService) {
-    this.searchingService.getSearchInfo().subscribe(search =>{
+    
+   }
+
+   findSearch(){
+     this.searchingService.updateSearch(this.username);
+     this.searchingService.getSearchInfo().subscribe(search =>{
       console.log(search);
       this.search =search;
     });
