@@ -30,7 +30,7 @@ CSS
 Bootstrap
 HTML
 ## Support and contact details
-If you run into any issues or you have any concerns please feel free to contact me @ njoroge.pitz@gmail.com. Also your very welcome to make contributions to the code.
+If you run into any issues or you have any concerns please feel free to contact me. my email is  njoroge.pitz@gmail.com. Also your very welcome to make contributions to the code.
 ### License
 MIT License
 
