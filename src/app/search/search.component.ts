@@ -9,12 +9,18 @@ import { SearchService } from '../search.service';
 })
 export class SearchComponent implements OnInit {
   search:any[];
+  repos:any[];
 
   constructor(private searchingService: SearchService) {
     this.searchingService.getSearchInfo().subscribe(search =>{
       console.log(search);
       this.search =search;
     });
+
+    this.searchingService.getSearchRepos().subscribe(repos =>{
+      console.log(repos);
+      this.repos=repos;
+    })
    }
 
   ngOnInit() {
