@@ -10,7 +10,8 @@
 </form>
 <div *ngIf="search">
   <div class="panel panel-default">
-    <div class="panel-heading">
+    <br>
+    <div class="jumbotron">
       {{search.name}} <small>({{search.login}})</small>
       <span *ngIf="search.company">, Works at {{search.company}}</span>
       {{search.location}}

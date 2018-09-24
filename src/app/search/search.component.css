@@ -1,4 +1,7 @@
-
+.jumbotron{
+    font-size: 20px;
+    color: white;
+}
 .search-form{
     padding: 50px;
     background-color: aqua;
